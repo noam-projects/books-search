@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { GoogleProvider } from './context';
 
 ReactDOM.render(
   <React.StrictMode>
+    <GoogleProvider>
     <App />
+    </GoogleProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
